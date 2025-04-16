@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: azu/rss-to-twitter@v2
         with:
-          RSS_URL: "https://medium.com/feed/@l-you"
+          RSS_URL: "https://l-you.medium.com/feed"
           TWEET_TEMPLATE: 'New Post: "%title%" %url%'
           UPDATE_WITHIN_MINUTES: 15 # post items that are published within 15 minutes
           TWITTER_APIKEY: ${{ secrets.TWITTER_APIKEY }}
